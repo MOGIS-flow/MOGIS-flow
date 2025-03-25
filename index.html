@@ -52,47 +52,9 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">MOGIS: Modeling-Driven Guided Sampling in Rectified Flow for Aligned Generation</h1>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
+             
                   <!-- Github link -->
                   <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
@@ -103,16 +65,6 @@
                     <span>Code</span>
                   </a>
                 </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
               </span>
             </div>
           </div>
@@ -148,7 +100,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            The aligned generation in Text-to-Image Models, which ensures that the generated image aligns with the text prompt, is a challenging task. Although current SOTA Text-to-Image Models such as Flux and Stable Diffusion 3 (SD3) effectively address the aligned generation issue by fully integrating text prompts through the MMDiT block, they still struggle with more complex prompts, particularly those involving precise quantity control and complex spatial relationships. Existing methods typically improve this issue by optimizing latents during the generation process using cross-attention map information, achieving some progress. However, these methods fail to generalize to new structures, such as the MMDiT architecture, when model structures change. To address this, inspired by the characteristics of Rectified Flow-trained models, we take a modeling approach based on the relatively straightforward sampling path of Rectfied Flow. We utilize the predicted $\hat{z_1}$ from each sampling step and compute the similarity with the text prompt through BLIP. This guides the sampling process to align more consistently with the text prompt. Extensive experiments on six different types of aligned generation benchmarks, based on both Flux and SD3 models, validate the effectiveness of our approach. 
           </p>
         </div>
       </div>
