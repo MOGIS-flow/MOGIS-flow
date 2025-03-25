@@ -80,7 +80,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <!-- Replace video with an image -->
-      <img src="static/images/teaser.png" alt="Task Image"/>
+      <img src="static/images/teaser.jpeg" alt="Task Image"/>
           <h2 class="subtitle has-text-centered">
             Our method leverages BLIP model to guide the sampling process of Rectified Flow-based models, ensuring that the generated results better align with the semantic information of the text prompt. Extensive experiments across six different benchmark categories demonstrate the superior performance of our approach. Notably, unlike previous methods that require text segmentation, our approach processes the entire prompt holistically, enabling better generalization to other tasks, such as spatial relationship alignment in text-to-image generation
           </h2>
@@ -115,20 +115,20 @@
       <div>
         <div class="item" style="background-color: #f0f8ff; padding: 20px; border-radius: 8px; width: 70%; margin: 0 auto;">
           <!-- Your image here -->
-          <img src="static/images/methods.png" alt="Type Image"/>
+          <img src="static/images/methods.jpeg" alt="Type Image"/>
           <h2 class="subtitle has-text-centered">
             The pipeline of our method. At each step, our approach evaluates the alignment between the predicted $\hat{z_1}$ and the text prompt through BLIP, backpropagating the alignment signal to the latent variable $\hat{z_t}$. This feedback is then utilized to update the predicted velocity field $v(z_t,t)$ at the current step, enhancing the alignment between the generated results and the textual prompt.
         </div>
         <div class="item" style="background-color: #fff0f5; padding: 20px; border-radius: 8px; width: 70%; margin: 20px auto;">
           <!-- Your image here -->
-          <img src="static/images/flux.png" alt="Task Image"/>
+          <img src="static/images/flux.jpeg" alt="Task Image"/>
           <h2 class="subtitle has-text-centered">
             Qualitative analysis of our method compared to other state-of-the-art approaches on Flux. Our method consistently generates high-quality images that align well with textual prompts across six different benchmarks. Moreover, compared to previous methods, our approach exhibits stronger task generalization capabilities and effectively captures the spatial relationships specified in text prompts.
           </h2>
         </div>
         <div class="item" style="background-color: #e6ffe6; padding: 20px; border-radius: 8px; width: 70%; margin: 20px auto;">
           <!-- Your image here -->
-          <img src="static/images/sd3.png" alt="Third Image"/>
+          <img src="static/images/sd3.jpeg" alt="Third Image"/>
           <h2 class="subtitle has-text-centered">
             Qualitative analysis of our method compared to other state-of-the-art approaches on SD3. Our method also demonstrates superior alignment performance.
           </h2>
